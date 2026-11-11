@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cyber Shield — منصة لكشف الروابط والرسائل الاحتيالية وتحليل مستوى الأمان.">
+  <meta name="theme-color" content="#030712">
+  <title>Cyber Shield | كشف احتيال الروابط</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components/buttons.css">
+  <link rel="stylesheet" href="css/components/cards.css">
+  <link rel="stylesheet" href="css/components/forms.css">
+  <link rel="stylesheet" href="css/components/toast.css">
+  <link rel="stylesheet" href="css/sections/header.css">
+  <link rel="stylesheet" href="css/sections/hero.css">
+  <link rel="stylesheet" href="css/sections/stats.css">
+  <link rel="stylesheet" href="css/sections/features.css">
+  <link rel="stylesheet" href="css/sections/checker.css">
+  <link rel="stylesheet" href="css/sections/reviews.css">
+  <link rel="stylesheet" href="css/sections/faq.css">
+  <link rel="stylesheet" href="css/sections/footer.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a href="#home" class="logo" aria-label="Cyber Shield">
+        <img src="assets/icons/shield.svg" alt="" class="logo__icon" width="24" height="24">
+        <span class="logo__text">Cyber Shield</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="القائمة" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#home" class="nav-link">الرئيسية</a></li>
+          <li><a href="#features" class="nav-link">المميزات</a></li>
+          <li><a href="#checker" class="nav-link">فحص الروابط</a></li>
+          <li><a href="#reviews" class="nav-link">التقييمات</a></li>
+          <li><a href="#faq" class="nav-link">الأسئلة</a></li>
+          <li><a href="#contact" class="nav-link">تواصل</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero section" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <h1 class="hero__title">
+            احمِ نفسك من <span class="text-accent">الاحتيال الإلكتروني</span> قبل فوات الأوان
+          </h1>
+          <p class="hero__subtitle">منصة ذكية تساعدك على اكتشاف الروابط والرسائل المشبوهة وتحليل مستوى الأمان خلال ثوانٍ.</p>
+          <div class="hero__actions">
+            <a href="#checker" class="btn btn--primary">ابدأ الفحص الآن</a>
+            <a href="#features" class="btn btn--outline">استكشف المميزات</a>
+          </div>
+        </div>
+
+        <aside class="hero__card card card--glow reveal">
+          <img src="assets/icons/link-scan.svg" alt="" class="hero__card-icon" width="48" height="48">
+          <h3>حماية متقدمة</h3>
+          <p>فحص سريع وتحليل ذكي للمخاطر الإلكترونية.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== Stats ===== -->
+    <section class="stats section" id="stats">
+      <div class="container stats__grid">
+        <div class="card stat reveal"><span class="stat__value" data-count="250000">0</span><span class="stat__label">رابط تم فحصه</span></div>
+        <div class="card stat reveal"><span class="stat__value" data-count="8500">0</span><span class="stat__label">محاولة احتيال مكتشفة</span></div>
+        <div class="card stat reveal"><span class="stat__value" data-count="52000">0</span><span class="stat__label">مستخدم نشط</span></div>
+        <div class="card stat reveal"><span class="stat__value" data-count="99" data-suffix="%">0</span><span class="stat__label">دقة التحليل</span></div>
+      </div>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section class="features section" id="features">
+      <div class="container">
+        <h2 class="section-title reveal">مميزات المنصة</h2>
+        <div class="features__grid">
+          <article class="card feature reveal">
+            <img src="assets/icons/link.svg" alt="" class="feature__icon" width="44" height="44">
+            <h3>فحص الروابط</h3>
+            <p>تحليل الروابط المشبوهة والكشف عن محاولات التصيد.</p>
+          </article>
+          <article class="card feature reveal">
+            <img src="assets/icons/mail.svg" alt="" class="feature__icon" width="44" height="44">
+            <h3>تحليل الرسائل</h3>
+            <p>الكشف عن الرسائل الاحتيالية والبريد المزيف.</p>
+          </article>
+          <article class="card feature reveal">
+            <img src="assets/icons/lock.svg" alt="" class="feature__icon" width="44" height="44">
+            <h3>حماية الحسابات</h3>
+            <p>تقديم نصائح وإرشادات لحماية بياناتك.</p>
+          </article>
+          <article class="card feature reveal">
+            <img src="assets/icons/chart.svg" alt="" class="feature__icon" width="44" height="44">
+            <h3>تقارير مفصلة</h3>
+            <p>تقارير احترافية توضح مستوى الخطر والأسباب.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Link checker ===== -->
+    <section class="checker section" id="checker">
+      <div class="container">
+        <h2 class="section-title reveal">فحص الرابط الإلكتروني</h2>
+        <div class="checker__box card reveal">
+          <form id="checkerForm" class="checker__form" novalidate>
+            <label for="urlInput" class="visually-hidden">الرابط</label>
+            <input type="text" id="urlInput" class="input" placeholder="ألصق الرابط هنا ..." autocomplete="off" spellcheck="false">
+            <button type="submit" class="btn btn--primary btn--block">فحص الرابط</button>
+          </form>
+          <div id="checkerResult" class="checker__result" role="status" aria-live="polite" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reviews ===== -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <h2 class="section-title reveal">آراء وتقييمات العملاء</h2>
+        <div class="reviews__grid" id="reviewsList"></div>
+      </div>
+    </section>
+
+    <!-- ===== Add review ===== -->
+    <section class="add-review section" id="add-review">
+      <div class="container container--narrow">
+        <h2 class="section-title reveal">أضف تقييمك</h2>
+        <form id="reviewForm" class="stack-form reveal" novalidate>
+          <label for="reviewName" class="visually-hidden">اسمك</label>
+          <input type="text" id="reviewName" class="input" placeholder="اسمك" maxlength="40">
+          <label for="reviewText" class="visually-hidden">رأيك</label>
+          <textarea id="reviewText" class="input input--area" placeholder="اكتب رأيك هنا..." maxlength="300"></textarea>
+          <button type="submit" class="btn btn--primary btn--block">إضافة التقييم</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq section" id="faq">
+      <div class="container container--narrow">
+        <h2 class="section-title reveal">الأسئلة الشائعة</h2>
+        <div class="faq__list" id="faqList">
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">كيف يتم فحص الروابط؟</button>
+            <div class="faq__answer"><p>نحلل الرابط مباشرة في متصفحك: نوع الاتصال، النطاق وامتداده، الكلمات المستخدمة في التصيد، وأي علامات تمويه، ثم نعطيك درجة أمان مع الأسباب.</p></div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">هل الخدمة مجانية؟</button>
+            <div class="faq__answer"><p>نعم، فحص الروابط مجاني بالكامل وبدون تسجيل.</p></div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">هل بياناتي محفوظة؟</button>
+            <div class="faq__answer"><p>نعم، الفحص يتم على جهازك ولا يتم إرسال الروابط أو حفظها على أي خادم.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="contact section" id="contact">
+      <div class="container container--form">
+        <h2 class="section-title reveal">تواصل معنا</h2>
+        <form id="contactForm" class="stack-form reveal" novalidate>
+          <label for="contactName" class="visually-hidden">الاسم الكامل</label>
+          <input type="text" id="contactName" class="input" placeholder="الاسم الكامل">
+          <label for="contactEmail" class="visually-hidden">البريد الإلكتروني</label>
+          <input type="email" id="contactEmail" class="input" placeholder="البريد الإلكتروني">
+          <label for="contactMessage" class="visually-hidden">رسالتك</label>
+          <textarea id="contactMessage" class="input input--area input--tall" placeholder="اكتب رسالتك..."></textarea>
+          <button type="submit" class="btn btn--primary btn--block">إرسال الرسالة</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <h3 class="footer__brand">Cyber Shield</h3>
+      <p>منصة متخصصة في التوعية والحماية من الاحتيال الإلكتروني.</p>
+      <ul class="footer__social">
+        <li><a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" width="22" height="22"></a></li>
+        <li><a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" width="22" height="22"></a></li>
+        <li><a href="#" aria-label="X"><img src="assets/icons/x.svg" alt="" width="22" height="22"></a></li>
+        <li><a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" width="22" height="22"></a></li>
+      </ul>
+      <p class="footer__copy">&copy; <span id="year">2026</span> جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="alert" aria-live="assertive"></div>
+
+  <!-- Scripts: plain files in load order so the site also works from file:// -->
+  <script src="js/utils/dom.js"></script>
+  <script src="js/utils/storage.js"></script>
+  <script src="js/utils/toast.js"></script>
+  <script src="js/core/link-analyzer.js"></script>
+  <script src="js/core/domain-hash.js"></script>
+  <script src="js/core/threat-feed.js"></script>
+  <script src="js/modules/navigation.js"></script>
+  <script src="js/modules/particles.js"></script>
+  <script src="js/modules/reveal.js"></script>
+  <script src="js/modules/counters.js"></script>
+  <script src="js/modules/link-checker.js"></script>
+  <script src="js/modules/reviews.js"></script>
+  <script src="js/modules/faq.js"></script>
+  <script src="js/modules/contact-form.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

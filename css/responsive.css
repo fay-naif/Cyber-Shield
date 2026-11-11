@@ -1,0 +1,51 @@
+/* Breakpoints */
+@media (max-width: 960px) {
+  .stats__grid,
+  .features__grid { grid-template-columns: repeat(2, 1fr); }
+  .reviews__grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 760px) {
+  :root { --section-space: 70px; }
+
+  .nav-toggle { display: flex; }
+
+  .main-nav {
+    position: absolute;
+    top: var(--header-height);
+    inset-inline: 0;
+    background: rgba(19, 22, 33, 0.98);
+    border-bottom: 1px solid var(--color-border);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+
+  .main-nav.is-open { max-height: 360px; }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 20px 18px;
+  }
+
+  .nav-link { display: block; padding: 10px 0; }
+  .nav-link::after { display: none; }
+
+  .nav-toggle.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle.is-open span:nth-child(2) { opacity: 0; }
+  .nav-toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .hero { padding-block: 70px 50px; }
+  .hero__inner { flex-direction: column; text-align: center; }
+  .hero__actions { justify-content: center; }
+
+  .reviews__grid { grid-template-columns: 1fr; }
+  .checker__box { padding: 20px; }
+}
+
+@media (max-width: 420px) {
+  .stats__grid,
+  .features__grid { grid-template-columns: 1fr; }
+  .stat__value { font-size: 1.8rem; }
+}

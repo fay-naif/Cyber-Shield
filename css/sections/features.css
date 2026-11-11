@@ -1,0 +1,31 @@
+/* Platform features */
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.feature {
+  padding: 26px 22px;
+  text-align: center;
+  min-height: 200px;
+}
+
+.feature__icon { margin: 0 auto 14px; }
+
+.feature h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.feature:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-accent-soft);
+  box-shadow: 0 12px 30px var(--color-accent-soft);
+}

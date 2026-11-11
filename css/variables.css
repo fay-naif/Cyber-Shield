@@ -1,0 +1,32 @@
+/* Design tokens — colours, spacing and type used across the site */
+:root {
+  --color-bg: #0f0f10;
+  --color-surface: #1a1a1c;
+  --color-surface-2: #202023;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-accent: #e3a83b;
+  --color-accent-soft: rgba(227,168,59,0.3);
+  --color-text: #ffffff;
+  --color-muted: #c8ccd6;
+  --color-placeholder: #8a8f9c;
+  --color-danger: #ff2e2e;
+  --color-warning: #ffa31a;
+  --color-success: #22d47a;
+  --color-star: #ffc928;
+
+  --font-main: "Cairo", "Tajawal", "Segoe UI", Tahoma, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  --header-height: 72px;
+  --container-width: 1080px;
+  --section-space: 110px;
+
+  --shadow-glow: 0 10px 30px rgba(0,0,0,0.4);
+  --transition: 0.25s ease;
+  --color-on-accent: #1a1205;
+  --color-header: rgba(22,22,24,0.96);
+  --particle-rgb: 227, 168, 59;
+}

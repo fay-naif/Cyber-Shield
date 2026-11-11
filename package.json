@@ -1,0 +1,12 @@
+{
+  "name": "cyber-shield",
+  "version": "1.1.0",
+  "description": "Arabic web platform that detects suspicious and phishing links.",
+  "scripts": {
+    "test": "node tests/link-analyzer.test.mjs && node tests/threat-feed.test.mjs",
+    "build:threats": "node scripts/build-threat-db.js",
+    "start": "npx --yes serve ."
+  },
+  "author": "Fay Naif",
+  "license": "MIT"
+}

@@ -1,0 +1,31 @@
+/* Inputs and stacked forms */
+.input {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 16px;
+  background: #ffffff;
+  color: #10131c;
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.input::placeholder { color: var(--color-placeholder); }
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 4px var(--color-accent-soft);
+}
+
+.input--area { min-height: 112px; resize: vertical; }
+.input--tall { min-height: 134px; }
+
+.input.is-invalid { border-color: var(--color-danger); }
+
+.stack-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
